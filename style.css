@@ -1436,35 +1436,63 @@ a.contact-info-item:hover {
 
 /* ── 17. RESPONSIVE ─────────────────────────────────────── */
 
-/* Tablet: 1024px */
+/* ── Desktop besar: 1280px+ sudah handled oleh base styles ── */
+
+/* ── Tablet landscape: max 1024px ───────────────────────── */
 @media (max-width: 1024px) {
-  .container { padding: 0 var(--space-xl); }
+  .container { padding: 0 var(--space-lg); }
 
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero-portrait { display: none; }
+  /* Hero: foto pindah ke bawah copy, tetap tampil */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .hero-portrait {
+    display: flex;         /* TAMPIL — jangan hide */
+    justify-content: center;
+  }
+
+  .portrait-card {
+    max-width: 340px;
+  }
+
   .hero-desc { max-width: 100%; }
+  .hero-title { font-size: clamp(2.2rem, 5vw, 3.5rem); }
 
-  .section-layout { grid-template-columns: 1fr; }
+  /* Section layout: 1 kolom */
+  .section-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
   .section-header { max-width: 100%; }
 
+  /* Metrics: 2 kolom */
   .metrics-strip { grid-template-columns: repeat(2, 1fr); }
 
+  /* Skills: 2 kolom */
   .skills-grid { grid-template-columns: 1fr 1fr; }
   .skills-grid > :last-child { grid-column: 1 / -1; }
 
+  /* Contact: 1 kolom */
   .contact-layout { grid-template-columns: 1fr; }
 
+  /* Mini project: foto mock hilang, copy full */
   .mini-project-inner { grid-template-columns: 1fr; }
   .mini-project-visual { display: none; }
 
+  /* Experience highlights: 2 kolom */
   .exp-highlights { grid-template-columns: 1fr 1fr; }
   .exp-highlights > :last-child { grid-column: 1 / -1; }
 }
 
-/* Mobile: 768px */
+/* ── Tablet portrait: max 768px ─────────────────────────── */
 @media (max-width: 768px) {
-  .container { padding: 0 var(--space-md); }
+  :root { --nav-h: 64px; }
 
+  .container { padding: 0 1.25rem; }
+
+  /* Nav mobile */
   .main-nav {
     display: none;
     position: fixed;
@@ -1474,58 +1502,135 @@ a.contact-info-item:hover {
     background: var(--white);
     flex-direction: column;
     align-items: stretch;
-    padding: var(--space-md);
+    padding: var(--space-sm) 0;
     border-bottom: 1px solid var(--slate-border);
     box-shadow: var(--shadow-md);
     gap: 0;
+    z-index: 999;
   }
-
   .main-nav.open { display: flex; }
-
   .nav-link {
-    padding: 0.75rem var(--space-md);
+    padding: 0.8rem 1.5rem;
     border-bottom: 1px solid var(--slate-bg);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
-
   .nav-link:hover { background: var(--slate-bg); }
-
   .hamburger { display: flex; }
-  .header-cta { display: none; }
 
-  .hero { padding-top: calc(var(--nav-h) + var(--space-xl)); }
-  .hero-title { font-size: 2.4rem; }
+  /* Hero */
+  .hero { padding-top: calc(var(--nav-h) + var(--space-lg)); padding-bottom: var(--space-xl); }
+  .hero-grid { gap: var(--space-xl); }
+  .hero-title { font-size: clamp(2rem, 8vw, 2.8rem); }
+  .hero-subtitle { font-size: 0.95rem; }
+  .hero-desc { font-size: 0.9rem; }
 
-  .metrics-strip { grid-template-columns: 1fr 1fr; gap: var(--space-md); padding: var(--space-lg); }
+  /* Foto tetap tampil, ukuran lebih kecil */
+  .hero-portrait { display: flex; justify-content: center; }
+  .portrait-card { max-width: 300px; width: 100%; }
 
-  .projects-grid { grid-template-columns: 1fr; }
+  /* Chips */
+  .contact-chips { flex-wrap: wrap; gap: var(--space-xs); }
+  .chip { font-size: 0.72rem; padding: 0.35rem 0.75rem; }
 
-  .org-grid { grid-template-columns: 1fr; }
+  /* Metrics: 2x2 */
+  .metrics-strip {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+  }
+  .metric-value { font-size: 1.35rem; }
 
-  .skills-grid { grid-template-columns: 1fr; }
-  .skills-grid > :last-child { grid-column: auto; }
+  /* Sections */
+  .section { padding: var(--space-2xl) 0; }
+  .section-title { font-size: 1.6rem; }
+  .card-lg { padding: var(--space-lg); }
 
+  /* Competency: 1 kolom */
   .competency-list { grid-template-columns: 1fr; }
 
+  /* Org: 1 kolom */
+  .org-grid { grid-template-columns: 1fr; }
+
+  /* Projects: 1 kolom */
+  .projects-grid { grid-template-columns: 1fr; }
+
+  /* Experience highlights: 1 kolom */
   .exp-highlights { grid-template-columns: 1fr; }
   .exp-highlights > :last-child { grid-column: auto; }
 
+  /* Skills: 1 kolom */
+  .skills-grid { grid-template-columns: 1fr; }
+  .skills-grid > :last-child { grid-column: auto; }
+
+  /* Mini project */
   .mini-project-inner { padding: var(--space-xl) var(--space-lg); }
   .mini-project-title { font-size: 1.4rem; }
+  .mini-project-subtitle { font-size: 1rem; }
 
-  .footer-inner { flex-direction: column; align-items: flex-start; }
+  /* Contact form */
+  .channel-selector { grid-template-columns: 1fr 1fr; }
+
+  /* Footer */
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: var(--space-md); }
   .footer-nav { flex-wrap: wrap; gap: var(--space-md); }
-
-  .section { padding: var(--space-2xl) 0; }
-
-  .card-lg { padding: var(--space-lg); }
 }
 
-/* Small mobile: 480px */
+/* ── Mobile kecil: max 480px ────────────────────────────── */
 @media (max-width: 480px) {
-  .hero-title { font-size: 1.9rem; }
-  .metrics-strip { grid-template-columns: 1fr; }
-  .contact-chips { flex-direction: column; }
+  .container { padding: 0 1rem; }
+
+  .hero-title { font-size: clamp(1.75rem, 9vw, 2.2rem); }
+  .hero-subtitle { font-size: 0.88rem; }
+
+  /* Foto: full width di mobile kecil */
+  .portrait-card { max-width: 100%; }
+  .portrait-img-wrap { aspect-ratio: 3/4; }
+
+  /* Chips: wrap normal */
+  .contact-chips { gap: var(--space-xs); }
+  .chip { font-size: 0.7rem; }
+
+  /* Hero actions: full width */
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+
+  /* Metrics: 1 kolom */
+  .metrics-strip { grid-template-columns: 1fr; gap: var(--space-md); }
+
+  /* Merit badge wrap */
+  .merit-badge { flex-direction: column; align-items: flex-start; }
+  .merit-badge-tag { margin-left: 0; }
+
+  /* Channel selector */
+  .channel-selector { grid-template-columns: 1fr; }
+  .channel-btn { justify-content: center; }
+
+  /* Section title */
+  .section-title { font-size: 1.4rem; }
+
+  /* Card padding */
+  .card-lg { padding: var(--space-md); }
+  .card-org > * { padding-left: var(--space-md); padding-right: var(--space-md); }
+
+  /* Mini project banner */
+  .mini-project-banner { border-radius: var(--radius-md); }
+  .mini-project-inner { padding: var(--space-lg) var(--space-md); }
+  .mini-project-title { font-size: 1.25rem; }
+
+  /* Skills */
+  .skill-group { padding: var(--space-lg); }
+
+  /* Footer */
+  .footer-nav { gap: var(--space-sm); }
+  .footer-nav a { font-size: 0.7rem; }
+}
+
+/* ── Mobile XS: max 360px ───────────────────────────────── */
+@media (max-width: 360px) {
+  .hero-title { font-size: 1.6rem; }
+  .logo { font-size: 1rem; }
+  .logo-tag { display: none; }
+  .section-number { font-size: 0.6rem; }
 }
 
 /* ── Channel Selector (Email / WhatsApp tabs) ───────────── */
