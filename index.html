@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Karel Kornelius — Junior Web Developer & Siswa Rekayasa Perangkat Lunak, Jakarta Selatan." />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="Kembali ke atas">
+        Karel <span class="logo-accent">Kornelius</span>
+        <span class="logo-tag">/ dev</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+        <a href="#about"        class="nav-link">About</a>  
+        <a href="#education"    class="nav-link">Education</a>
+        <a href="#organization" class="nav-link">Organization</a>
+        <a href="#experience"   class="nav-link">Experience</a>
+        <a href="#projects"     class="nav-link">Projects</a>
+        <a href="#skills"       class="nav-link">Skills</a>
+        <a href="#contact"      class="nav-link">Contact</a>
+      </nav>
+
+<button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+      <div class="container">
+
+
+        <div class="hero-grid">
+          <!-- Left: Copy -->
+          <div class="hero-copy" id="about">
+            <div class="badge-row">
+              <span class="badge">Curriculum Vitae</span>
+              <span class="badge badge-accent">Software Engineering</span>
+            </div>
+
+            <h1 class="hero-title">
+              Karel <em>Kornelius</em>
+            </h1>
+            <p class="hero-subtitle">
+              Junior Web Developer &amp; Siswa Rekayasa Perangkat Lunak (RPL) di Jakarta Selatan.
+            </p>
+            <p class="hero-desc">
+              Siswa SMK jurusan Rekayasa Perangkat Lunak yang berdedikasi tinggi dan memiliki ketertarikan mendalam pada perancangan arsitektur website, rekayasa logika backend, serta implementasi sistem informasi modern. Menggabungkan kedisiplinan organisasi, pengalaman proyek riil, serta komitmen belajar berkesinambungan untuk menciptakan solusi digital yang presisi, tangguh, dan bernilai guna.
+            </p>
+
+            <div class="contact-chips">
+              <span class="chip">
+                <svg class="chip-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                karelkarelkornelius@gmail.com
+              </span>
+              <a href="https://wa.me/6281382958012" target="_blank" rel="noopener noreferrer" class="chip">
+                <svg class="chip-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                +62 813 8295 8012
+              </a>
+              <a href="https://www.linkedin.com/in/karel-kornelius-65b0333b2/" target="_blank" rel="noopener noreferrer" class="chip">
+                <svg class="chip-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.779 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"/></svg>
+                linkedin.com/karelkornelius
+              </a>
+              <a href="https://www.instagram.com/karelkrnlius/" target="_blank" rel="noopener noreferrer" class="chip">
+                <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                @karelkrnlius
+              </a>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">Lihat Proyek ↓</a>
+              <a href="#contact"  class="btn btn-ghost">Hubungi Saya</a>
+            </div>
+          </div>
+
+          <!-- Right: Portrait Card -->
+          <div class="hero-portrait">
+            <div class="portrait-card">
+              <div class="portrait-img-wrap">
+                <img
+                  src="images/karel.jpg"
+                  loading="eager"
+                />
+                <div class="portrait-caption">
+                  <div>
+                    <strong>Karel Kornelius</strong>
+                    <span>Jakarta Selatan, Indonesia</span>
+                  </div>
+                  <span class="status-dot" title="Open to opportunities"></span>
+                </div>
+              </div>
+              <div class="portrait-meta">
+                <span>SMK SOFTWARE ENGINEERING.</span>
+                <span class="portrait-meta-accent">CLASS OF 2026/2027</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metrics Strip -->
+        <div class="metrics-strip">
+          <div class="metric">
+            <span class="metric-label">Akademik Rata-rata</span>
+            <span class="metric-value metric-accent">91.99</span>
+            <span class="metric-sub">Skala 100 · SMKN 20 Jakarta</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Magang Industri</span>
+            <span class="metric-value">BRIN</span>
+            <span class="metric-sub">Pusat Riset &amp; Inovasi Nasional</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Kepemimpinan</span>
+            <span class="metric-value">Ketua</span>
+            <span class="metric-sub">RohKris SMKN 20 (2025–2026)</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Kompetensi Inti</span>
+            <span class="metric-value metric-accent">Laravel</span>
+            <span class="metric-sub">Fullstack · PHP · MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 01: EDUCATION ===== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-layout">
+          <div class="section-header">
+            <div class="section-number">
+              <span>01</span>
+              <span class="section-rule"></span>
+              <span>Institusi Formal</span>
+            </div>
+            <h2 class="section-title">Pendidikan</h2>
+            <p class="section-desc">Landasan akademis dalam rekayasa komputasi, algoritma, serta disiplin perangkat lunak.</p>
+          </div>
+
+          <div class="section-body">
+            <div class="card card-lg">
+              <div class="card-top">
+                <div>
+                  <span class="label-accent">Sekolah Menengah Kejuruan</span>
+                  <h3 class="card-title">SMK Negeri 20 Jakarta</h3>
+                  <p class="card-subtitle">Program Keahlian: Rekayasa Perangkat Lunak (RPL)</p>
+                </div>
+                <div class="card-meta-right">
+                  <span class="mono-text">Juli 2024 — Sekarang</span>
+                  <span class="text-muted">Jakarta Selatan, Indonesia</span>
+                </div>
+              </div>
+
+              <div class="merit-badge">
+                <div class="merit-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+                </div>
+                <div>
+                  <span class="merit-title">Pencapaian Akademis Terverifikasi</span>
+                  <p class="merit-desc">Nilai Rata-rata Kumulatif (GPA): <strong class="accent-text">91.99</strong> / 100</p>
+                </div>
+                <span class="merit-badge-tag">Predikat Sangat Memuaskan</span>
+              </div>
+
+              <div class="competency-grid">
+                <h4 class="competency-title">Fokus Kompetensi &amp; Pembelajaran:</h4>
+                <div class="competency-list">
+                  <div class="competency-item">
+                    <span class="check-icon">✓</span>
+                    <span><strong>Web Development:</strong> HTML5, CSS3, JavaScript modern, dan integrasi Tailwind CSS.</span>
+                  </div>
+                  <div class="competency-item">
+                    <span class="check-icon">✓</span>
+                    <span><strong>Algoritma &amp; Pemrograman:</strong> Logika pemrograman berorientasi objek (OOP) dan struktur data.</span>
+                  </div>
+                  <div class="competency-item">
+                    <span class="check-icon">✓</span>
+                    <span><strong>Basis Data Relasional:</strong> Perancangan relasi entity, normalisasi, dan query MySQL.</span>
+                  </div>
+                  <div class="competency-item">
+                    <span class="check-icon">✓</span>
+                    <span><strong>Rekayasa Sistem:</strong> Siklus SDLC, analisis kebutuhan sistem, dan kontrol versi Git.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 02: ORGANIZATION ===== -->
+    <section class="section" id="organization">
+      <div class="container">
+        <div class="section-layout">
+          <div class="section-header">
+            <div class="section-number">
+              <span>02</span>
+              <span class="section-rule"></span>
+              <span>Kepemimpinan</span>
+            </div>
+            <h2 class="section-title">Pengalaman Organisasi</h2>
+            <p class="section-desc">Pengembangan karakter, kepemimpinan tim, serta kemampuan komunikasi lintas personal.</p>
+          </div>
+
+          <div class="section-body">
+            <div class="org-grid">
+              <!-- Org 1 -->
+              <div class="card card-org">
+                <div class="card-org-header">
+                  <span class="mono-text accent-text">Agustus 2025 — Agustus 2026</span>
+                  <span class="role-badge">Ketua</span>
+                </div>
+                <h3 class="card-title">Ketua Rohris</h3>
+                <p class="card-subtitle">SMKN 20 Jakarta</p>
+                <p class="card-body">
+                  Memimpin dan mengorkestrasi program pembinaan kerohanian Kristen di lingkungan sekolah, mengoordinasikan persekutuan berkala, pemahaman Alkitab, serta perayaan hari besar keagamaan. Berhasil meningkatkan partisipasi anggota melalui program kerja yang terstruktur.
+                </p>
+                <div class="card-footer">
+                  <span class="footer-label">Dampak &amp; Tanggung Jawab:</span>
+                  <ul class="footer-list">
+                    <li>Mentoring nilai kedisiplinan dan moral siswa binaan</li>
+                    <li>Manajemen logistik acara berskala sekolah dan kemitraan</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Org 2 -->
+              <div class="card card-org">
+                <div class="card-org-header">
+                  <span class="mono-text text-muted">Agustus 2024 — Agustus 2025</span>
+                  <span class="role-badge role-badge-neutral">Anggota Inti</span>
+                </div>
+                <h3 class="card-title">Anggota Tim BAND</h3>
+                <p class="card-subtitle">SMKN 20 Jakarta</p>
+                <p class="card-body">
+                  Berperan aktif sebagai musisi keyboard/pianis dalam ansambel musik resmi sekolah. Mengasah kedisiplinan jadwal latihan, kepekaan ritme, sinkronisasi antar pemain panggung, dan koordinasi performa publik.
+                </p>
+                <div class="card-footer">
+                  <span class="footer-label">Dampak &amp; Tanggung Jawab:</span>
+                  <ul class="footer-list">
+                    <li>Kolaborasi kreatif dan manajemen panggung pada perhelatan sekolah</li>
+                    <li>Ketekunan latihan rutin guna menghasilkan harmonisasi tim</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 03: EXPERIENCE / PKL ===== -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-layout">
+          <div class="section-header">
+            <div class="section-number">
+              <span>03</span>
+              <span class="section-rule"></span>
+              <span>Praktik Industri</span>
+            </div>
+            <h2 class="section-title">Pengalaman Kerja</h2>
+            <p class="section-desc">Implementasi langsung standar industri dan rekayasa perangkat lunak skala instansi.</p>
+          </div>
+
+          <div class="section-body">
+            <div class="card card-lg">
+              <div class="card-top">
+                <div>
+                  <span class="badge badge-accent">Praktik Kerja Lapangan (PKL / PKR)</span>
+                  <h3 class="card-title" style="margin-top: var(--space-xs);">Web Developer (Intern)</h3>
+                  <p class="card-subtitle accent-text">Badan Riset dan Inovasi Nasional (BRIN)</p>
+                </div>
+                <div class="card-meta-right">
+                  <span class="mono-text">April 2026 — Mei 2026</span>
+                  <span class="text-muted">Jakarta Pusat / Selatan</span>
+                </div>
+              </div>
+
+              <div class="experience-body">
+                <h4 class="competency-title">Kontribusi &amp; Realisasi Sistem:</h4>
+                <p class="card-body">
+                  Mengembangkan aplikasi website manajemen aset internal instansi berbasis <strong>HTML, CSS, JavaScript, PHP, dan Laravel framework</strong>. Bertanggung jawab atas perancangan skema basis data MySQL terstruktur, penataan hak akses peran (authentication &amp; role authorization), alur persetujuan mutasi aset, hingga antarmuka laporan rekapitulasi data inventaris.
+                </p>
+
+                <div class="exp-highlights">
+                  <div class="exp-highlight-card">
+                    <strong>Arsitektur MVC</strong>
+                    <span>Struktur modul rapi menggunakan framework Laravel dan pola routing terstandar.</span>
+                  </div>
+                  <div class="exp-highlight-card">
+                    <strong>Keamanan &amp; Autentikasi</strong>
+                    <span>Validasi form ketat, token CSRF, dan sanitasi input terhadap ancaman injeksi SQL.</span>
+                  </div>
+                  <div class="exp-highlight-card">
+                    <strong>Database MySQL</strong>
+                    <span>Implementasi foreign keys, relasi one-to-many, dan query Eloquent efisien.</span>
+                  </div>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tech-label">Teknologi Terpakai:</span>
+                  <span class="tag">Laravel</span>
+                  <span class="tag">PHP 8.4.19</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">HTML5 / CSS3</span>
+                  <span class="tag">RESTful API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 04: PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header-full">
+          <div>
+            <div class="section-number">
+              <span>04</span>
+              <span class="section-rule"></span>
+              <span>Karya Rekayasa</span>
+            </div>
+            <h2 class="section-title">Proyek Pilihan</h2>
+          </div>
+          <p class="section-desc section-desc-right">
+            Portofolio aplikasi fungsional yang dibangun dengan standar arsitektur web modern, performa responsif, dan logika backend yang bersih.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Inventory -->
+          <div class="project-card">
+            <div class="project-visual">
+              <div class="project-visual-header">
+                <span class="mono-text accent-text">01/APP</span>
+                <span class="project-status"><span class="status-dot"></span>Operational</span>
+              </div>
+              <div class="project-visual-body">
+                <div class="project-mock-bar">
+                  <span>Inventory Panel</span>
+                  <span class="mono-text accent-text" style="font-size:0.7rem;">CRUD Ready</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width:78%"></div></div>
+                <div class="project-visual-footer">
+                  <span>Laravel 10</span>
+                  <span>MySQL Engine</span>
+                </div>
+              </div>
+            </div>
+            <span class="project-category">Web Application / Fullstack</span>
+            <h3 class="project-title">Website Inventory (Laravel)</h3>
+            <p class="project-desc">Sistem manajemen inventaris barang komprehensif dengan operasi CRUD penuh, otentikasi multi-level role (Admin &amp; Staff Gudang), dan laporan arus mutasi stok terotomasi.</p>
+            <div class="project-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Blade</span>
+            </div>
+          </div>
+
+          <!-- Project 2: Company Profile -->
+          <div class="project-card">
+            <div class="project-visual">
+              <div class="project-visual-header">
+                <span class="mono-text accent-text">02/WEB</span>
+                <span class="project-status"><span class="status-dot"></span>Live</span>
+              </div>
+              <div class="project-visual-body">
+                <div class="project-mock-bar">
+                  <span>Company Profile</span>
+                  <span class="mono-text accent-text" style="font-size:0.7rem;">Responsive</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width:92%"></div></div>
+                <div class="project-visual-footer">
+                  <span>HTML/CSS/JS</span>
+                  <span>Tailwind CSS</span>
+                </div>
+              </div>
+            </div>
+            <span class="project-category">Frontend / Responsive Web</span>
+            <h3 class="project-title">Company Profile Website</h3>
+            <p class="project-desc">Website profil perusahaan responsif dengan desain modern, animasi scroll, dan navigasi yang intuitif. Dibangun menggunakan HTML, CSS, JavaScript, dan Tailwind CSS.</p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Tailwind</span>
+            </div>
+          </div>
+
+          <!-- Project 3: School Website -->
+          <div class="project-card">
+            <div class="project-visual">
+              <div class="project-visual-header">
+                <span class="mono-text accent-text">03/CMS</span>
+                <span class="project-status"><span class="status-dot"></span>Deployed</span>
+              </div>
+              <div class="project-visual-body">
+                <div class="project-mock-bar">
+                  <span>SMKN 20 Website</span>
+                  <span class="mono-text accent-text" style="font-size:0.7rem;">Multi-page</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width:85%"></div></div>
+                <div class="project-visual-footer">
+                  <span>Profil &amp; Berita</span>
+                  <span>Galeri Kegiatan</span>
+                </div>
+              </div>
+            </div>
+            <span class="project-category">Web Informasi / Institusi</span>
+            <h3 class="project-title">Website Sekolah SMKN 20 Jakarta</h3>
+            <p class="project-desc">Website resmi sekolah dengan halaman informasi profil, berita terkini, dan galeri kegiatan sekolah yang terstruktur dan mudah dikelola.</p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ===== MINI PROJECT USAHA (Sertifikasi) ===== -->
+        <div class="mini-project-banner">
+          <div class="mini-project-inner">
+            <div class="mini-project-copy">
+              <div class="section-number" style="margin-bottom: var(--space-xs);">
+                <span class="mono-text accent-text">SERTIFIKASI</span>
+                <span class="section-rule"></span>
+                <span>Junior Web Developer</span>
+              </div>
+              <h3 class="mini-project-title">Mini Project Usaha</h3>
+              <h4 class="mini-project-subtitle">Toko Karya Tangan</h4>
+              <p class="mini-project-desc">
+                Website toko online dinamis yang dikembangkan sebagai bagian dari skenario sertifikasi kompetensi Junior Web Developer. Menampilkan katalog produk kerajinan tangan (rajut/batik/penjahit) dengan fitur manajemen produk, keranjang belanja, dan formulir pemesanan.
+              </p>
+              <div class="mini-project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi website Toko Karya Tangan">
+                Kunjungi Website →
+              </a>
+            </div>
+            <div class="mini-project-visual" aria-hidden="true">
+              <div class="mini-shop-mock">
+                <div class="mini-shop-header">
+                  <span>&#9679;</span><span>&#9679;</span><span>&#9679;</span>
+                  <span style="flex:1; text-align:center; font-size:0.6rem; color:var(--text-muted);">toko-karya-tangan.com</span>
+                </div>
+                <div class="mini-shop-content">
+                  <div class="mini-shop-hero-bar"></div>
+                  <div class="mini-shop-cards">
+                    <div class="mini-shop-card"></div>
+                    <div class="mini-shop-card"></div>
+                    <div class="mini-shop-card"></div>
+                  </div>
+                  <div class="mini-shop-footer-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SECTION 05: SKILLS ===== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-layout">
+          <div class="section-header">
+            <div class="section-number">
+              <span>05</span>
+              <span class="section-rule"></span>
+              <span>Kompetensi</span>
+            </div>
+            <h2 class="section-title">Keahlian &amp; Teknologi</h2>
+            <p class="section-desc">Stack teknologi yang dikuasai dan kemampuan lintas disiplin untuk pengembangan solusi digital.</p>
+          </div>
+
+          <div class="section-body">
+            <div class="skills-grid">
+
+              <!-- Hard Skills -->
+              <div class="skill-group">
+                <h4 class="skill-group-title">Hard Skills — Teknologi</h4>
+                <div class="skill-list">
+                  <div class="skill-item">
+                    <span class="skill-name">HTML5 &amp; CSS3</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+                    <span class="skill-pct">95%</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">JavaScript (ES6+)</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+                    <span class="skill-pct">80%</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">PHP &amp; Laravel</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+                    <span class="skill-pct">82%</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">MySQL</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+                    <span class="skill-pct">78%</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">Tailwind CSS</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+                    <span class="skill-pct">85%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tools & Design -->
+              <div class="skill-group">
+                <h4 class="skill-group-title">Tools &amp; Desain Grafis</h4>
+                <div class="skill-list">
+                  <div class="skill-item">
+                    <span class="skill-name">Canva</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+                    <span class="skill-pct">90%</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">Adobe Photoshop</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
+                    <span class="skill-pct">72%</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">Adobe Illustrator</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+                    <span class="skill-pct">65%</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">Microsoft Excel</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+                    <span class="skill-pct">75%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Soft Skills -->
+              <div class="skill-group">
+                <h4 class="skill-group-title">Soft Skills</h4>
+                <div class="soft-skills-grid">
+                  <span class="soft-skill-tag">Kreativitas</span>
+                  <span class="soft-skill-tag">Kerja Tim</span>
+                  <span class="soft-skill-tag">Problem Solving</span>
+                  <span class="soft-skill-tag">Komunikasi</span>
+                  <span class="soft-skill-tag">Manajemen Waktu</span>
+                </div>
+
+                <h4 class="skill-group-title" style="margin-top: var(--space-lg);">Bahasa</h4>
+                <div class="lang-list">
+                  <div class="lang-item">
+                    <span class="lang-name">Bahasa Indonesia</span>
+                    <span class="lang-level">Native</span>
+                  </div>
+                  <div class="lang-item">
+                    <span class="lang-name">Bahasa Inggris</span>
+                    <span class="lang-level">Intermediate</span>
+                  </div>
+                </div>
+
+                <h4 class="skill-group-title" style="margin-top: var(--space-lg);">Hobi</h4>
+                <div class="soft-skills-grid">
+                  <span class="soft-skill-tag">Main Piano</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 06: CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-header">
+            <div class="section-number">
+              <span>06</span>
+              <span class="section-rule"></span>
+              <span>Komunikasi</span>
+            </div>
+            <h2 class="section-title">Hubungi Saya</h2>
+            <p class="section-desc">Terbuka untuk diskusi proyek, kolaborasi, peluang magang, atau sekadar menyapa.</p>
+
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <span class="contact-info-icon">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                </span>
+                <div>
+                  <span class="contact-info-label">Email</span>
+                  <span class="contact-info-value">karelkarelkornelius@gmail.com</span>
+                </div>
+              </div>
+              <a href="tel:123-456-7890" target="_blank" rel="noopener noreferrer" class="contact-info-item">
+                <span class="contact-info-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </span>
+                <div>
+                  <span class="contact-info-label">Telepon</span>
+                  <span class="contact-info-value">+62 813 8295 8012</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/karel-kornelius-65b0333b2/" target="_blank" rel="noopener noreferrer" class="contact-info-item">
+                <span class="contact-info-icon">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.779 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"/></svg>
+                </span>
+                <div>
+                  <span class="contact-info-label">LinkedIn</span>
+                  <span class="contact-info-value">karelkornelius</span>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/karelkrnlius/" target="_blank" rel="noopener noreferrer" class="contact-info-item">
+                <span class="contact-info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                </span>
+                <div>
+                  <span class="contact-info-label">Instagram</span>
+                  <span class="contact-info-value">@karelkrnlius</span>
+                </div>
+              </a>
+              <div class="contact-info-item">
+                <span class="contact-info-icon">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                </span>
+                <div>
+                  <span class="contact-info-label">Lokasi</span>
+                  <span class="contact-info-value">Jakarta Selatan, DKI Jakarta, Indonesia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap">
+            <h3 class="form-title">Kirim Pesan</h3>
+
+            <!-- Channel Selector -->
+            <div class="channel-selector">
+              <button class="channel-btn active" id="tab-email" data-tab="email" type="button">
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                Kirim via Email
+              </button>
+              <button class="channel-btn" id="tab-wa" data-tab="wa" type="button">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Kirim via WhatsApp
+              </button>
+            </div>
+
+            <!-- Tab: Email Form -->
+            <form class="contact-form tab-panel active" id="form-email" novalidate>
+              <div class="form-group">
+                <label for="email-name" class="form-label">Nama Lengkap</label>
+                <input type="text" id="email-name" name="name" class="form-input" placeholder="Nama Anda" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="email-subject" class="form-label">Subjek</label>
+                <input type="text" id="email-subject" name="subject" class="form-input" placeholder="Topik pesan Anda" />
+              </div>
+              <div class="form-group">
+                <label for="email-message" class="form-label">Pesan</label>
+                <textarea id="email-message" name="message" class="form-input form-textarea" rows="5" placeholder="Tuliskan pesan Anda di sini..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="btn-email">
+                <svg style="width:16px;height:16px;" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                Buka Gmail →
+              </button>
+              <p class="form-note" id="feedback-email" aria-live="polite"></p>
+            </form>
+
+            <!-- Tab: WhatsApp Form -->
+            <form class="contact-form tab-panel" id="form-wa" novalidate>
+              <div class="form-group">
+                <label for="wa-name" class="form-label">Nama Lengkap</label>
+                <input type="text" id="wa-name" name="name" class="form-input" placeholder="Nama Anda" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="wa-message" class="form-label">Pesan</label>
+                <textarea id="wa-message" name="message" class="form-input form-textarea" rows="5" placeholder="Tuliskan pesan Anda di sini..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-wa btn-full" id="btn-wa">
+                <svg style="width:16px;height:16px;" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Buka WhatsApp →
+              </button>
+              <p class="form-note" id="feedback-wa" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="logo">Karel <span class="logo-accent">Kornelius</span></span>
+        <span class="footer-tagline">Junior Web Developer · SMKN 20 Jakarta · RPL</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigasi">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="footer-copy">&copy; 2026 Karel Kornelius</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
