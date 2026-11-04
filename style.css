@@ -751,6 +751,10 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-serif); font-weight: 600; line-
   gap: var(--space-lg);
 }
 
+.org-grid-3 {
+  grid-template-columns: 1fr 1fr;
+}
+
 .card-org {
   display: flex;
   flex-direction: column;
@@ -1481,7 +1485,8 @@ a.contact-info-item:hover {
   .mini-project-inner { grid-template-columns: 1fr; }
   .mini-project-visual { display: none; }
 
-  /* Experience highlights: 2 kolom */
+  /* Org: 2 kolom di tablet */
+  .org-grid, .org-grid-3 { grid-template-columns: 1fr 1fr; }
   .exp-highlights { grid-template-columns: 1fr 1fr; }
   .exp-highlights > :last-child { grid-column: 1 / -1; }
 }
@@ -1549,7 +1554,7 @@ a.contact-info-item:hover {
   .competency-list { grid-template-columns: 1fr; }
 
   /* Org: 1 kolom */
-  .org-grid { grid-template-columns: 1fr; }
+  .org-grid, .org-grid-3 { grid-template-columns: 1fr; }
 
   /* Projects: 1 kolom */
   .projects-grid { grid-template-columns: 1fr; }
