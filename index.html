@@ -147,9 +147,7 @@
         <div class="section-layout">
           <div class="section-header">
             <div class="section-number">
-              <span>01</span>
-              <span class="section-rule"></span>
-              <span>Institusi Formal</span>
+              <span>01</span> <span>Institusi Formal</span>
             </div>
             <h2 class="section-title">Pendidikan</h2>
             <p class="section-desc">Landasan akademis dalam rekayasa komputasi, algoritma, serta disiplin perangkat lunak.</p>
@@ -307,9 +305,7 @@
         <div class="section-layout">
           <div class="section-header">
             <div class="section-number">
-              <span>02</span>
-              <span class="section-rule"></span>
-              <span>Kepemimpinan</span>
+              <span>02</span> <span>Kepemimpinan</span>
             </div>
             <h2 class="section-title">Pengalaman Organisasi</h2>
             <p class="section-desc">Pengembangan karakter, kepemimpinan tim, serta kemampuan komunikasi lintas personal.</p>
@@ -389,9 +385,7 @@
         <div class="section-layout">
           <div class="section-header">
             <div class="section-number">
-              <span>03</span>
-              <span class="section-rule"></span>
-              <span>Praktik Industri</span>
+              <span>03</span> <span>Praktik Industri</span>
             </div>
             <h2 class="section-title">Pengalaman Kerja</h2>
             <p class="section-desc">Implementasi langsung standar industri dan rekayasa perangkat lunak skala instansi.</p>
@@ -455,9 +449,7 @@
         <div class="section-header-full">
           <div>
             <div class="section-number">
-              <span>04</span>
-              <span class="section-rule"></span>
-              <span>Karya Rekayasa</span>
+              <span>04</span> <span>Karya Rekayasa</span>
             </div>
             <h2 class="section-title">Proyek Pilihan</h2>
           </div>
@@ -468,28 +460,27 @@
 
         <div class="projects-grid">
 
-          <!-- Project 1: Inventory -->
+          <!-- Project 1: Inventory (SIMAS) -->
           <div class="project-card">
-            <div class="project-visual">
-              <div class="project-visual-header">
+            <div class="project-thumb-wrap" id="simas-thumb-wrap">
+              <div class="project-thumb-header">
                 <span class="mono-text accent-text">01/APP</span>
                 <span class="project-status"><span class="status-dot"></span>Operational</span>
               </div>
-              <div class="project-visual-body">
-                <div class="project-mock-bar">
-                  <span>Inventory Panel</span>
-                  <span class="mono-text accent-text" style="font-size:0.7rem;">CRUD Ready</span>
-                </div>
-                <div class="progress-bar"><div class="progress-fill" style="width:78%"></div></div>
-                <div class="project-visual-footer">
-                  <span>Laravel 10</span>
-                  <span>MySQL Engine</span>
-                </div>
-              </div>
+              <img
+                src="images/simas/Screenshot (546).png"
+                alt="SIMAS — Dashboard inventaris"
+                class="project-thumb-img"
+                loading="lazy"
+              />
+              <button class="project-thumb-overlay" id="simas-gallery-btn" aria-label="Lihat semua screenshot SIMAS">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                Lihat Galeri
+              </button>
             </div>
             <span class="project-category">Web Application / Fullstack</span>
-            <h3 class="project-title">Website Inventory (Laravel)</h3>
-            <p class="project-desc">Sistem manajemen inventaris barang komprehensif dengan operasi CRUD penuh, otentikasi multi-level role (Admin &amp; Staff Gudang), dan laporan arus mutasi stok terotomasi.</p>
+            <h3 class="project-title">Website Inventory — SIMAS</h3>
+            <p class="project-desc">Sistem manajemen inventaris aset komprehensif dengan operasi CRUD penuh, otentikasi multi-level role (Admin &amp; Staff), dan laporan statistik aset terotomasi.</p>
             <div class="project-tags">
               <span class="tag">Laravel</span>
               <span class="tag">PHP</span>
@@ -500,64 +491,46 @@
 
           <!-- Project 2: Company Profile -->
           <div class="project-card">
-            <div class="project-visual">
-              <div class="project-visual-header">
+            <div class="project-thumb-wrap" id="company-thumb-wrap">
+              <div class="project-thumb-header">
                 <span class="mono-text accent-text">02/WEB</span>
                 <span class="project-status"><span class="status-dot"></span>Live</span>
               </div>
-              <div class="project-visual-body">
-                <div class="project-mock-bar">
-                  <span>Company Profile</span>
-                  <span class="mono-text accent-text" style="font-size:0.7rem;">Responsive</span>
-                </div>
-                <div class="progress-bar"><div class="progress-fill" style="width:92%"></div></div>
-                <div class="project-visual-footer">
-                  <span>HTML/CSS/JS</span>
-                  <span>Tailwind CSS</span>
-                </div>
-              </div>
+              <img
+                src="images/company/Screenshot (538).png"
+                alt="Company Profile Website"
+                class="project-thumb-img"
+                loading="lazy"
+              />
+              <button class="project-thumb-overlay" id="company-gallery-btn" aria-label="Lihat semua screenshot Company Profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                Lihat Galeri
+              </button>
             </div>
             <span class="project-category">Frontend / Responsive Web</span>
             <h3 class="project-title">Company Profile Website</h3>
-            <p class="project-desc">Website profil perusahaan responsif dengan desain modern, animasi scroll, dan navigasi yang intuitif. Dibangun menggunakan HTML, CSS, JavaScript, dan Tailwind CSS.</p>
+            <p class="project-desc">Website profil perusahaan responsif dengan desain modern, animasi scroll, dan navigasi yang intuitif. Dibangun menggunakan HTML, CSS, dan JavaScript.</p>
             <div class="project-tags">
               <span class="tag">HTML5</span>
               <span class="tag">CSS3</span>
               <span class="tag">JavaScript</span>
-              <span class="tag">Tailwind</span>
             </div>
           </div>
 
-          <!-- Project 3: School Website -->
-          <div class="project-card">
-            <div class="project-visual">
-              <div class="project-visual-header">
-                <span class="mono-text accent-text">03/CMS</span>
-                <span class="project-status"><span class="status-dot"></span>Deployed</span>
-              </div>
-              <div class="project-visual-body">
-                <div class="project-mock-bar">
-                  <span>SMKN 20 Website</span>
-                  <span class="mono-text accent-text" style="font-size:0.7rem;">Multi-page</span>
-                </div>
-                <div class="progress-bar"><div class="progress-fill" style="width:85%"></div></div>
-                <div class="project-visual-footer">
-                  <span>Profil &amp; Berita</span>
-                  <span>Galeri Kegiatan</span>
-                </div>
-              </div>
-            </div>
-            <span class="project-category">Web Informasi / Institusi</span>
-            <h3 class="project-title">Website Sekolah SMKN 20 Jakarta</h3>
-            <p class="project-desc">Website resmi sekolah dengan halaman informasi profil, berita terkini, dan galeri kegiatan sekolah yang terstruktur dan mudah dikelola.</p>
-            <div class="project-tags">
-              <span class="tag">HTML5</span>
-              <span class="tag">CSS3</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">PHP</span>
-            </div>
-          </div>
+        </div>
 
+        <!-- ===== GALLERY MODAL ===== -->
+        <div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true" aria-label="Galeri Screenshot" hidden>
+          <div class="gallery-modal-backdrop" id="gallery-backdrop"></div>
+          <div class="gallery-modal-box">
+            <div class="gallery-modal-header">
+              <h4 class="gallery-modal-title" id="gallery-modal-title">Galeri</h4>
+              <button class="gallery-close-btn" id="gallery-close-btn" aria-label="Tutup galeri">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+            </div>
+            <div class="gallery-grid" id="gallery-grid"></div>
+          </div>
         </div>
 
         <!-- ===== MINI PROJECT USAHA (Sertifikasi) ===== -->
@@ -565,9 +538,7 @@
           <div class="mini-project-inner">
             <div class="mini-project-copy">
               <div class="section-number" style="margin-bottom: var(--space-xs);">
-                <span class="mono-text accent-text">SERTIFIKASI</span>
-                <span class="section-rule"></span>
-                <span>Junior Web Developer</span>
+                <span class="mono-text accent-text">SERTIFIKASI</span> <span>Junior Web Developer</span>
               </div>
               <h3 class="mini-project-title">Mini Project Usaha</h3>
               <h4 class="mini-project-subtitle">Toko Pengrajin Batik</h4>
@@ -614,9 +585,7 @@
         <div class="section-layout">
           <div class="section-header">
             <div class="section-number">
-              <span>05</span>
-              <span class="section-rule"></span>
-              <span>Kompetensi</span>
+              <span>05</span> <span>Kompetensi</span>
             </div>
             <h2 class="section-title">Keahlian &amp; Teknologi</h2>
             <p class="section-desc">Stack teknologi yang dikuasai dan kemampuan lintas disiplin untuk pengembangan solusi digital.</p>
@@ -730,9 +699,7 @@
         <div class="contact-layout">
           <div class="contact-header">
             <div class="section-number">
-              <span>06</span>
-              <span class="section-rule"></span>
-              <span>Komunikasi</span>
+              <span>06</span> <span>Komunikasi</span>
             </div>
             <h2 class="section-title">Hubungi Saya</h2>
             <p class="section-desc">Terbuka untuk diskusi proyek, kolaborasi, peluang magang, atau sekadar menyapa.</p>

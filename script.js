@@ -224,3 +224,119 @@
   });
 
 })();
+
+/* ── 8. Gallery Modal (Projects) ─────────────────────────── */
+(function () {
+
+  // Data foto per project
+  const galleries = {
+    simas: {
+      title: 'SIMAS — Website Inventory (Screenshots)',
+      images: [
+        { src: 'images/simas/Screenshot (546).png', alt: 'SIMAS Dashboard' },
+        { src: 'images/simas/Screenshot (547).png', alt: 'SIMAS Halaman 2' },
+        { src: 'images/simas/Screenshot (548).png', alt: 'SIMAS Halaman 3' },
+        { src: 'images/simas/Screenshot (549).png', alt: 'SIMAS Halaman 4' },
+        { src: 'images/simas/Screenshot (550).png', alt: 'SIMAS Halaman 5' },
+        { src: 'images/simas/Screenshot (551).png', alt: 'SIMAS Halaman 6' },
+        { src: 'images/simas/Screenshot (552).png', alt: 'SIMAS Halaman 7' },
+        { src: 'images/simas/Screenshot (553).png', alt: 'SIMAS Halaman 8' },
+        { src: 'images/simas/Screenshot (554).png', alt: 'SIMAS Halaman 9' },
+        { src: 'images/simas/Screenshot (555).png', alt: 'SIMAS Halaman 10' },
+        { src: 'images/simas/Screenshot (556).png', alt: 'SIMAS Halaman 11' },
+        { src: 'images/simas/Screenshot (557).png', alt: 'SIMAS Halaman 12' },
+      ]
+    },
+    company: {
+      title: 'Company Profile Website (Screenshots)',
+      images: [
+        { src: 'images/company/Screenshot (538).png', alt: 'Company Profile Halaman 1' },
+        { src: 'images/company/Screenshot (539).png', alt: 'Company Profile Halaman 2' },
+        { src: 'images/company/Screenshot (540).png', alt: 'Company Profile Halaman 3' },
+        { src: 'images/company/Screenshot (541).png', alt: 'Company Profile Halaman 4' },
+        { src: 'images/company/Screenshot (542).png', alt: 'Company Profile Halaman 5' },
+        { src: 'images/company/Screenshot (543).png', alt: 'Company Profile Halaman 6' },
+        { src: 'images/company/Screenshot (544).png', alt: 'Company Profile Halaman 7' },
+      ]
+    }
+  };
+
+  const modal      = document.getElementById('gallery-modal');
+  const backdrop   = document.getElementById('gallery-backdrop');
+  const closeBtn   = document.getElementById('gallery-close-btn');
+  const grid       = document.getElementById('gallery-grid');
+  const modalTitle = document.getElementById('gallery-modal-title');
+
+  if (!modal) return;
+
+  // Lightbox element (created once)
+  const lightbox = document.createElement('div');
+  lightbox.className = 'gallery-lightbox';
+  lightbox.setAttribute('hidden', '');
+  lightbox.setAttribute('role', 'dialog');
+  lightbox.setAttribute('aria-modal', 'true');
+  lightbox.setAttribute('aria-label', 'Preview gambar');
+
+  const lbImg = document.createElement('img');
+  lbImg.alt = '';
+  lightbox.appendChild(lbImg);
+  document.body.appendChild(lightbox);
+
+  // Open modal
+  function openGallery(key) {
+    const data = galleries[key];
+    if (!data) return;
+
+    modalTitle.textContent = data.title;
+    grid.innerHTML = '';
+
+    data.images.forEach(({ src, alt }) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = alt;
+      img.loading = 'lazy';
+      img.addEventListener('click', () => openLightbox(src, alt));
+      grid.appendChild(img);
+    });
+
+    modal.removeAttribute('hidden');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  // Close modal
+  function closeGallery() {
+    modal.setAttribute('hidden', '');
+    document.body.style.overflow = '';
+    grid.innerHTML = '';
+  }
+
+  // Lightbox
+  function openLightbox(src, alt) {
+    lbImg.src = src;
+    lbImg.alt = alt;
+    lightbox.removeAttribute('hidden');
+  }
+
+  function closeLightbox() {
+    lightbox.setAttribute('hidden', '');
+    lbImg.src = '';
+  }
+
+  // Event bindings
+  document.getElementById('simas-gallery-btn').addEventListener('click', () => openGallery('simas'));
+  document.getElementById('company-gallery-btn').addEventListener('click', () => openGallery('company'));
+
+  closeBtn.addEventListener('click', closeGallery);
+  backdrop.addEventListener('click', closeGallery);
+
+  lightbox.addEventListener('click', closeLightbox);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (!lightbox.hasAttribute('hidden')) { closeLightbox(); return; }
+      if (!modal.hasAttribute('hidden')) { closeGallery(); }
+    }
+  });
+
+})();
